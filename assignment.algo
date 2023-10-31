@@ -1,0 +1,13 @@
+ALGORITHM sum of all odd numbers
+VAR
+    numbers : ARRAY_OF INTEGER[7];
+    sum, i: INTEGER:= 0
+BEGIN
+    numbers := {3,54,32,77,12,34,15}
+    FOR i FROM 0 TO 6 DO
+        IF (numbers[i]%2<>0) THEN
+            sum := sum + numbers[i]
+        END_IF
+    END_FOR
+    Write(sum)
+END
